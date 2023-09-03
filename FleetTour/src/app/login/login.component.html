@@ -1,0 +1,17 @@
+<div class="div_body">
+    <form class="example-form" id="formLogin">
+        <h1>Login</h1>
+        <p>Digite os seus dados de acesso no campo abaixo.</p>
+        <label for="login">Nome de usuário</label>
+        <input matInput placeholder="Login" [formControl]="login" placeholder="Digite seu nome de usuário" autofocus="true" />
+        <label for="password">Senha</label>
+        <input matInput type="password" [formControl]="senha" placeholder="Digite sua senha" />
+
+        <div class="div_botao">
+            <button mat-stroked-button id="btn_entrar" color="primary" (click)="entrar()">Entrar</button>
+            <button mat-stroked-button id="btn_cadastrar" routerLink="/usuario">Cadastrar</button>
+        </div>
+    </form>
+</div>
+
+

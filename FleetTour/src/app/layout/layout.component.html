@@ -1,0 +1,31 @@
+<!-- LAYOUT -->
+<mat-sidenav-container class="example-container">
+    <!-- MENU -->
+    <mat-sidenav #sidenav [mode]="'side'">
+        <br />
+        <p>
+            <a routerLink="/usuario">Usuarios</a><br />
+            <a routerLink="/login">Login</a><br />
+        </p>
+    </mat-sidenav>
+    <!-- MENU -->
+
+    <mat-sidenav-content>
+        <p style="float: left; width: 10%;"><button mat-button (click)="sidenav.toggle()">Menu</button></p>
+        <p style="float: left; width: 90%;">
+            FleetTour
+        </p>
+        <!-- BODY -->
+        <div class="body" id="body">
+            <router-outlet></router-outlet>
+        </div>
+        <!-- BODY -->
+
+        <!-- FOOTER -->
+        <div class="footer" style="float: left; width: 100%;">
+
+        </div>
+        <!-- FOOTER -->
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<!-- LAYOUT -->

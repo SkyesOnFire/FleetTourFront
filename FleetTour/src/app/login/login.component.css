@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.div_botao{
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.div_body{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    color: #023047;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e9e9e9;
+}
+
+#formLogin{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+#formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+#formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#formLogin input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+
+#formLogin input:focus {
+    border: 1px solid #f72585;
+}
+
+#formLogin label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#formLogin a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+#formLogin a:hover {
+    color: #f72585;
+}
+
+#btn_entrar {
+    width: 100px;
+    height: 40px;
+    background: white;
+    color: #0d730d;
+    z-index: 1;
+}
+
+#btn_entrar:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0d730d;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+#btn_entrar:hover {
+    color: #fff;
+}
+
+#btn_entrar:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+#btn_entrar:active {
+    top: 2px;
+}
+
+#btn_cadastrar {
+    margin-left: 10%;
+    width: 100px;
+    height: 40px;
+    background: white;
+    color: #1919e6;
+    z-index: 1;
+}
+
+#btn_cadastrar:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #1919e6;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+#btn_cadastrar:hover {
+    color: #fff;
+}
+
+#btn_cadastrar:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+#btn_cadastrar:active {
+    top: 2px;
+}

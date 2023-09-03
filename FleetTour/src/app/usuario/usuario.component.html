@@ -1,0 +1,40 @@
+<div class="div_body">
+    <form class="example-form" id="formLogin">
+        <h1>Cadastro</h1>
+        <p>Digite os seus dados de acesso no campo abaixo.</p>
+        <!-- Nome -->
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome" [formControl]="nome">
+
+        <!-- CPF -->
+            <mat-label>CPF</mat-label>
+            <input matInput placeholder="CPF" [formControl]="cpf">
+
+        <!-- Data de Nascimento-->
+        <mat-label>Data de nascimento</mat-label>
+        <div>
+            <input matInput [matDatepicker]="picker" [formControl]="dt_nascimento">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+
+        <!-- Genero -->
+            <mat-label>Genero</mat-label>
+            <input matInput placeholder="Genero" [formControl]="genero">
+
+        <!-- Telefone -->
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="Telefone" [formControl]="telefone">
+
+        <!-- Login -->
+            <mat-label>Login</mat-label>
+            <input matInput placeholder="Login" [formControl]="login">
+
+        <!-- Senha -->
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput placeholder="Senha" [formControl]="senha">
+
+
+        <button mat-raised-button (click)="salvar()">Cadastrar</button>
+    </form>
+</div>
