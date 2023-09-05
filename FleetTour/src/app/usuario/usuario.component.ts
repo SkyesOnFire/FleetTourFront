@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { UsuarioModel } from './model/usuario.model';
+import { UsuarioService } from './service/usuario.service';
 
 
 @Component({
@@ -9,6 +11,8 @@ import { FormControl, Validators } from '@angular/forms';
 })
 
 export class UsuarioComponent {
+
+  constructor(private usuarioService: UsuarioService) {}
 
   nome = new FormControl('', 
     [Validators.required]);
@@ -39,6 +43,18 @@ export class UsuarioComponent {
     console.log(this.telefone.value);
     console.log(this.login.value);
     console.log(this.senha.value);
+
+
+    let usuario = new UsuarioModel();
+    usuario.nome = this.nome.value?.toString();
+    usuario.cpf = this.cpf.value?.toString();
+    usuario.dt_nascimento = this.dt_nascimento.value?.toString();
+    usuario.genero = this.genero.value?.toString();
+    usuario.telefone = this.telefone.value?.toString();
+    usuario.login = this.login.value?.toString();
+    usuario.senha = this.senha.value?.toString();
+
+    this.usuarioService.salvar(usuario);
   }
 
 }
