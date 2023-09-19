@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { LoginComponent } from './login/login.component';
+import { IndexComponent } from './index/index.component';
+import { OnibusComponent } from './onibus/onibus.component';
+
 
 const routes: Routes = [
   { path: 'layout', component: LayoutComponent },
@@ -11,7 +14,9 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: 'usuario', component: UsuarioComponent },
-      { path: 'login', component: LoginComponent },
+      { path: 'login', component: LoginComponent }, 
+      { path: 'index', component: IndexComponent }, 
+      { path: 'onibus', component: OnibusComponent }, 
     ]
   }
 ];

@@ -17,7 +17,12 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
-import { LoginComponent } from './login/login.component';
+import {LoginComponent} from './login/login.component';
+import {IndexComponent} from './index/index.component';
+import {NgIf, NgFor} from '@angular/common';
+import {MatTableModule} from '@angular/material/table';
+import { OnibusComponent } from './onibus/onibus.component';
+
 
 
 @NgModule({
@@ -25,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     LayoutComponent,
     UsuarioComponent,
-    LoginComponent
+    LoginComponent,
+    IndexComponent,
+    OnibusComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,10 @@ import { LoginComponent } from './login/login.component';
     MatNativeDateModule,
     MatButtonModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    NgIf,
+    NgFor,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
