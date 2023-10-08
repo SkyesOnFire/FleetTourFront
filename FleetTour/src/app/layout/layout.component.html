@@ -1,19 +1,20 @@
 <!-- LAYOUT -->
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container class="top">
     <!-- MENU -->
-    <mat-sidenav #sidenav [mode]="'side'">
-        <br />
-        <p>
-            <button mat-stroked-button id="btn_cadastrar" routerLink="/login">Login</button>
-        </p>
+    <mat-sidenav class="side" #sidenav [mode]="'side'">
+            <button class="btn_home" mat-stroked-button routerLink="/login">Home<mat-icon>home</mat-icon></button>
     </mat-sidenav>
-    <!-- MENU -->
-
+    
     <mat-sidenav-content>
-        <p style="float: left; width: 10%;"><button mat-button (click)="sidenav.toggle()">Menu</button></p>
-        <p style="float: left; width: 90%;">
-            FleetTour
-        </p>
+        <div class="top">
+            <div class="btn_side">
+                <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+            </div>
+            <div class="logo">
+                <h1>FleeTour</h1>
+            </div>
+        </div>
+
         <!-- BODY -->
         <div class="body" id="body">
             <router-outlet></router-outlet>

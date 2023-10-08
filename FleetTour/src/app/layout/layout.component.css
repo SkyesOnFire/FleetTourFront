@@ -2,3 +2,30 @@
     width: 100%;
     height: 90%;
 }
+
+.btn_side{
+    float: left;
+    width: 10%;
+}
+.btn_side button{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    width: 90%;
+    margin-left: 46%;
+}
+
+.top{
+    background-color: #7ec6d4;
+}
+
+.btn_home{
+    margin-top: 10%;
+    border: none;
+}
+
+.side{
+    background-color: #7ec6d4
+}
