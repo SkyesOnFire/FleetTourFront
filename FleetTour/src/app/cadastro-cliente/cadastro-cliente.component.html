@@ -1,0 +1,28 @@
+<button mat-raised-button type="button" routerLink="/indexCliente">Voltar</button>
+<div class="div_body">
+    <form class="example-form" id="form">
+        <h1>Cadastro Cliente</h1>
+        <!-- Nome -->
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome" [formControl]="nome">
+
+        <!-- CPF -->
+        <mat-label>CPF</mat-label>
+        <input matInput placeholder="CPF" [formControl]="cpf">
+
+        <!-- Data de Nascimento-->
+        <mat-label>Data de nascimento</mat-label>
+        <div>
+            <input matInput [matDatepicker]="picker" [formControl]="dt_nascimento">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+
+        <!-- Telefone -->
+        <mat-label>Telefone</mat-label>
+        <input matInput placeholder="Telefone" [formControl]="telefone">
+
+
+        <button mat-raised-button type="button" (click)="salvar()">Cadastrar</button>
+    </form>
+</div>

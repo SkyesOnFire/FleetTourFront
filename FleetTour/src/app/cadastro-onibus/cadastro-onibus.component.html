@@ -1,0 +1,24 @@
+<button mat-raised-button type="button" routerLink="/indexOnibus">Voltar</button>
+<div class="div_body">
+    <form class="example-form" id="form">
+        <h1>Cadastro Onibus</h1>
+        <!-- Nome -->
+        <mat-label>Modelo</mat-label>
+        <input matInput placeholder="Modelo" [formControl]="modelo">
+
+        <!-- CPF -->
+        <mat-label>Marca</mat-label>
+        <input matInput placeholder="Marca" [formControl]="marca">
+
+        <!-- Data de Nascimento-->
+        <mat-label>Placa</mat-label>
+        <input matInput placeholder="Placa" [formControl]="placa">
+
+        <!-- Telefone -->
+        <mat-label>Ano</mat-label>
+        <input matInput placeholder="Ano" [formControl]="ano">
+
+
+        <button mat-raised-button type="button" (click)="salvar()">Cadastrar</button>
+    </form>
+</div>

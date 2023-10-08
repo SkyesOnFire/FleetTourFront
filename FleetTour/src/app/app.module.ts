@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +23,13 @@ import {NgIf, NgFor} from '@angular/common';
 import {MatTableModule} from '@angular/material/table';
 import { OnibusComponent } from './onibus/onibus.component';
 
+import { MatListModule } from '@angular/material/list';
+import { IndexOnibusComponent } from './index-onibus/index-onibus.component';
+import { IndexClienteComponent } from './index-cliente/index-cliente.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { CadastroOnibusComponent } from './cadastro-onibus/cadastro-onibus.component';
+import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
+
 
 
 @NgModule({
@@ -33,8 +40,14 @@ import { OnibusComponent } from './onibus/onibus.component';
     LoginComponent,
     IndexComponent,
     OnibusComponent,
+    IndexOnibusComponent,
+    IndexClienteComponent,
+    ClienteComponent,
+    CadastroOnibusComponent,
+    CadastroClienteComponent,
   ],
   imports: [
+    MatListModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
